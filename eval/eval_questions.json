@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What is a vector database used for?",
+    "reference_answer": "A vector database stores numerical embeddings of data and allows fast similarity search, commonly used for retrieval-augmented generation."
+  },
+  {
+    "question": "What does RAG stand for in the context of language models?",
+    "reference_answer": "RAG stands for retrieval-augmented generation, where relevant documents are retrieved and given to the model as context before it generates an answer."
+  },
+  {
+    "question": "Why would someone run a language model locally instead of using a cloud API?",
+    "reference_answer": "Running locally avoids per-request API costs, keeps data private since nothing leaves the machine, and works offline without internet access."
+  },
+  {
+    "question": "What is model quantization?",
+    "reference_answer": "Quantization reduces the precision of a model's weights, such as from 16-bit to 4-bit, to shrink memory usage and speed up inference with some quality tradeoff."
+  },
+  {
+    "question": "What is the difference between a 1B parameter model and a 7B parameter model?",
+    "reference_answer": "A 7B parameter model has more parameters, generally giving it stronger reasoning and knowledge at the cost of more memory, slower inference, and higher hardware requirements than a 1B model."
+  },
+  {
+    "question": "What is an embedding in the context of natural language processing?",
+    "reference_answer": "An embedding is a numerical vector representation of text that captures its semantic meaning, allowing similar pieces of text to have similar vectors."
+  },
+  {
+    "question": "What is chunking used for when processing documents for retrieval?",
+    "reference_answer": "Chunking splits long documents into smaller pieces so they can be embedded and retrieved individually, improving relevance of retrieved context."
+  },
+  {
+    "question": "What is Ollama used for?",
+    "reference_answer": "Ollama is a tool for running large language models locally on a machine, handling model downloading, quantization, and serving through a simple API."
+  }
+]
