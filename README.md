@@ -12,6 +12,12 @@ inference — not just "call an API."
 
 ---
 
+## Live App
+
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live_App-red)](https://he2cdeudepvqgtpaiqjmkm.streamlit.app/)
+
+---
+
 ## Features
 
 - **💬 Chat** — streaming responses, conversation memory persisted to SQLite
