@@ -16,11 +16,14 @@ inference — not just "call an API."
 
 - **💬 Chat** — streaming responses, conversation memory persisted to SQLite
   across restarts.
+  
 - **📄 Documents / RAG** — upload PDF/TXT/MD files; they're chunked, embedded
   locally, and stored in a persistent Chroma vector database. Answers can be
   grounded in your own documents with source citations.
+  
 - **📊 Benchmark** — compare tokens/sec, latency, and RAM footprint across
   five small models (1.5B–3.8B params) on your actual hardware.
+  
 - **✅ Evaluation** — run a hand-written Q&A set against any model and get a
   quality score (keyword-overlap against reference answers) plus latency,
   fully offline.
@@ -163,15 +166,18 @@ local-llm-assistant/
   and a stable REST API — a defensible pragmatic choice, and one worth
   being able to argue the other side of (llama.cpp gives you more control
   over sampling internals and no server dependency).
+  
 - **Chroma over FAISS**: Chroma persists to disk out of the box and has a
   simpler metadata-filtering API, which mattered more here than FAISS's
   raw speed advantage at this data scale (thousands, not millions, of
   vectors).
+  
 - **Keyword-overlap eval over LLM-as-judge**: keeps the eval harness
   dependency-free and deterministic. The README calls out explicitly that
   this is a simplification — an LLM-judge using the same local model would
   be a natural next step and is worth mentioning as a limitation, not
   hiding it.
+  
 - **SQLite for chat memory**: no server process, ships as a single file,
   more than sufficient for a single-user local assistant.
 
@@ -188,13 +194,3 @@ local-llm-assistant/
   control over sampling and quantization.
 
 ---
-
-## Resume bullet (edit with your real numbers after benchmarking)
-
-> Built an offline, retrieval-augmented AI assistant using quantized local
-> LLMs (Phi-3.5, Qwen2.5, Llama 3.2, 1.5B–3.8B params) served via Ollama;
-> implemented a RAG pipeline with local embeddings and persistent vector
-> search, benchmarked 5 model/quantization configurations for
-> latency-quality tradeoffs, and built an offline evaluation harness —
-> achieving [X]% answer accuracy at [Y] tokens/sec on [your hardware] with
-> zero API cost and no data leaving the device.
