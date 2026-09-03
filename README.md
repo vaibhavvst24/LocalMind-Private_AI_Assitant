@@ -200,3 +200,14 @@ local-llm-assistant/
   control over sampling and quantization.
 
 ---
+
+## 👨‍💻 About Me
+
+**Vaibhav Singh Bains**  
+*Aspiring Data Scientist | Machine Learning Enthusiast*
+
+- 📧 [Email](mailto:vaibhavvst8@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/vaibhav-singh-bains/)
+- 🐙 [GitHub](https://github.com/vaibhavvst24)
+
+---
